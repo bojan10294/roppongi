@@ -1,0 +1,971 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav_bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+  }
+}
+.nav_bar__logo {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-left: 1.5rem;
+  transition: all 0.1s ease;
+  outline: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav_bar__logo {
+    margin-left: 4rem;
+    margin-top: 0.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__logo {
+    color: #37588d;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav_bar__logo {
+    margin-left: 8rem;
+  }
+}
+.nav_bar__logo:hover {
+  color: #527dc2;
+}
+.nav_bar__logo__about {
+  color: black;
+}
+.nav_bar__header {
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.nav_bar__btn {
+  align-self: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__btn {
+    display: none;
+  }
+}
+.nav_bar__links {
+  margin-bottom: 0;
+  list-style-type: none;
+  transition: all 0.7s ease;
+  height: 0;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__links {
+    height: auto;
+    display: flex;
+    margin-right: 4rem;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav_bar__links {
+    overflow: inherit;
+    margin-right: 8rem;
+  }
+}
+.nav_bar__collapse {
+  height: 384px;
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__collapse {
+    height: 60px;
+  }
+}
+.nav_bar__single-link {
+  padding: 1.25rem;
+  font-weight: 500;
+  display: block;
+  background: #527dc2;
+  padding-left: 4rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  outline: none;
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__single-link {
+    display: block;
+    background: none;
+    padding: 2rem 1.25rem 1.25rem;
+    color: #adadad;
+  }
+}
+.nav_bar__single-link:hover {
+  padding-left: 3rem;
+  background: #37588d;
+}
+@media only screen and (min-width: 992px) {
+  .nav_bar__single-link:hover {
+    background: none;
+    padding: 2rem 1.25rem 1.25rem;
+    color: white;
+  }
+}
+.nav_bar .active_link {
+  color: white;
+}
+.nav_bar .active_link__about {
+  color: black;
+}
+@media only screen and (min-width: 1200px) {
+  .nav_bar #sviProizvodi {
+    position: absolute;
+    left: 15rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav_bar #usluge {
+    position: absolute;
+    left: 24rem;
+  }
+}
+
+.bar {
+  background-color: white;
+}
+.bar__about {
+  background-color: black;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (min-width: 992px) {
+  .about_single-link {
+    color: #545454;
+  }
+  .about_single-link:hover {
+    color: black;
+  }
+}
+
+.myContainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/bg-small.jpg") center/cover no-repeat;
+  min-height: calc(100vh - 62px);
+}
+@media only screen and (min-width: 768px) {
+  .myContainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../img/img-1.jpg") center/cover no-repeat;
+  }
+}
+
+.hero {
+  cursor: default;
+  text-align: center;
+}
+.hero h1 {
+  padding-top: 7rem;
+  color: #527dc2;
+  font-size: 2.8rem;
+}
+.hero h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.hero p {
+  color: white;
+  margin: 2.3rem 1rem 5rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.hero a {
+  color: white;
+  font-weight: 500;
+  background-color: #ad0d0d;
+  padding: 0.8rem 2.4rem;
+}
+.hero a:hover {
+  background-color: #dc1111;
+  color: black;
+}
+.hero img {
+  width: 30px;
+  margin-top: 5rem;
+}
+@media only screen and (min-width: 576px) {
+  .hero .line {
+    content: "";
+    height: 1px;
+    width: 20%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 4.5rem;
+  }
+  .hero h3 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin: 2.3rem 3rem 5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 5.5rem;
+  }
+  .hero h3 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero h1 {
+    padding-top: 15vh;
+    font-size: 6.5rem;
+  }
+  .hero h3 {
+    font-size: 1.9rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+    margin: 2.3rem 7rem 5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 7.2rem;
+  }
+  .hero p {
+    margin: 2.3rem auto 5rem;
+    width: 50%;
+  }
+}
+
+.container1 {
+  cursor: default;
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .container1 {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container1 {
+    padding: 0 10%;
+  }
+}
+.container1 .text_area {
+  text-align: center;
+  background-color: #527dc2;
+  color: black;
+  padding: 4rem;
+}
+@media only screen and (min-width: 576px) {
+  .container1 .text_area {
+    padding: 6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container1 .text_area {
+    background-color: #527dc2;
+    height: 70%;
+    width: 70%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.container1 .text_area .text_div {
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .container1 .text_area .text_div {
+    width: 50%;
+    margin-right: 7%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container1 .text_area .text_div {
+    margin-right: 11%;
+  }
+}
+.container1 .text_area .text_div::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 40%;
+  height: 1px;
+  background-color: black;
+}
+.container1 .text_area .text_div::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 40%;
+  height: 1px;
+  background-color: black;
+}
+.container1 .text_area h1 {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .container1 .text_area h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+.container1 .text_area p {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 576px) {
+  .container1 .text_area p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container1 .text_area p {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container1 .img_area {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    background: url("../img/img-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(70%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container1 .img_area {
+    width: 40%;
+  }
+}
+
+.container2 {
+  cursor: default;
+  background-color: black;
+}
+@media only screen and (min-width: 992px) {
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container2 .caption {
+  color: white;
+  background: black;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+@media only screen and (min-width: 992px) {
+  .container2 .caption {
+    width: 33.3%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container2 .caption {
+    max-width: 500px;
+  }
+}
+.container2 .caption div {
+  padding: 2rem;
+}
+@media only screen and (min-width: 1200px) {
+  .container2 .caption div {
+    padding: 2.5rem;
+  }
+}
+.container2 .caption h1 {
+  font-size: 2rem;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 1200px) {
+  .container2 .caption h1 {
+    font-size: 2.3rem;
+  }
+}
+.container2 .caption p {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 1200px) {
+  .container2 .caption p {
+    font-size: 1rem;
+    margin-top: 1.4rem;
+  }
+}
+.container2 .caption h4 {
+  margin-top: 0.7rem;
+  transition: all 0.5s ease;
+}
+@media only screen and (min-width: 1200px) {
+  .container2 .caption h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+.container2 .caption1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/mag-glass.jpg") center/cover no-repeat;
+  background-size: 122%;
+  transition: all 0.5s ease;
+}
+.container2 .caption1:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/mag-glass.jpg") center/cover no-repeat;
+  background-size: 130%;
+  padding-bottom: 7px;
+}
+.container2 .caption1:hover h1, .container2 .caption1:hover p, .container2 .caption1:hover h4 {
+  text-shadow: 10px 10px 5px black;
+}
+.container2 .caption2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/interection.jpg") center/cover no-repeat;
+  background-size: 145%;
+  transition: all 0.5s ease;
+}
+.container2 .caption2:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/interection.jpg") center/cover no-repeat;
+  background-size: 154%;
+  padding-bottom: 7px;
+}
+.container2 .caption2:hover h1, .container2 .caption2:hover p, .container2 .caption2:hover h4 {
+  text-shadow: 10px 10px 5px black;
+}
+.container2 .caption3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bike.jpg") center/cover no-repeat;
+  background-size: 122%;
+  transition: all 0.5s ease;
+}
+.container2 .caption3:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bike.jpg") center/cover no-repeat;
+  background-size: 130%;
+  padding-bottom: 7px;
+}
+.container2 .caption3:hover h1, .container2 .caption3:hover p, .container2 .caption3:hover h4 {
+  text-shadow: 10px 10px 5px black;
+}
+
+.container3 {
+  cursor: default;
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .container3 {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container3 {
+    padding: 0 10%;
+  }
+}
+.container3 .text_area {
+  text-align: center;
+  background-color: #adadad;
+  color: black;
+  padding: 4rem;
+}
+@media only screen and (min-width: 576px) {
+  .container3 .text_area {
+    padding: 6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container3 .text_area {
+    height: 70%;
+    width: 70%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.container3 .text_area .text_div {
+  position: relative;
+}
+@media only screen and (min-width: 992px) {
+  .container3 .text_area .text_div {
+    width: 50%;
+    margin-left: 7%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .text_area .text_div {
+    margin-left: 11%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .text_area .text_div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+  }
+}
+.container3 .text_area .line {
+  content: "";
+  height: 1px;
+  width: 60%;
+  background-color: black;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 576px) {
+  .container3 .text_area .line {
+    width: 40%;
+  }
+}
+.container3 .text_area h1 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) {
+  .container3 .text_area h1 {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
+  .container3 .text_area h1 {
+    font-size: 2.7rem;
+  }
+}
+.container3 .text_area h3 {
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .text_area h3 {
+    font-size: 1.7rem;
+  }
+}
+.container3 .text_area h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .text_area h5 {
+    font-size: 1.4rem;
+  }
+}
+.container3 .text_area p {
+  margin-top: 2.8rem;
+  font-size: 0.9rem;
+  margin-bottom: 3.4rem;
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .text_area p {
+    padding: 0 10%;
+    font-size: 1rem;
+  }
+}
+.container3 .text_area a {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #37588d;
+  padding: 0.5rem 3rem;
+  border: 2px solid #37588d;
+}
+.container3 .text_area a:hover {
+  background-color: #949494;
+}
+@media only screen and (min-width: 992px) {
+  .container3 .img_area {
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    background: url("../img/phone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(60%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container3 .img_area {
+    width: 40%;
+  }
+}
+
+footer {
+  cursor: default;
+  text-align: center;
+  background-color: #527dc2;
+  padding: 3rem 0;
+}
+footer .line {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #545454;
+  margin-bottom: 3rem;
+}
+footer ul {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+footer ul li a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #303030;
+  margin: 0 1rem;
+}
+footer p {
+  color: #303030;
+}
+
+.about_us {
+  background: url("../img/about-bg.jpg");
+  height: calc(100vh - 80px);
+  background-position: center;
+}
+.about_us .about_hero {
+  text-align: center;
+}
+.about_us .about_hero h1 {
+  padding-top: 2.5rem;
+  text-transform: uppercase;
+}
+.about_us .about_hero h3 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  padding: 0 5%;
+}
+.about_us .about_hero p {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  padding: 0 5%;
+}
+@media only screen and (min-width: 576px) {
+  .about_us .about_hero h1 {
+    padding-top: 3.5rem;
+    font-size: 2.9rem;
+  }
+  .about_us .about_hero h3 {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .about_us .about_hero p {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    padding: 0 10%;
+  }
+  .about_us .about_hero .line {
+    content: "";
+    background-color: black;
+    height: 1px;
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 576px) and (min-width: 1500px) {
+  .about_us .about_hero .line {
+    width: 40%;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about_us .about_hero h1 {
+    font-size: 3.4rem;
+  }
+  .about_us .about_hero h3 {
+    font-size: 1.3rem;
+  }
+  .about_us .about_hero p {
+    margin-top: 3rem;
+    font-size: 1rem;
+    padding: 0 20%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .about_us .about_hero {
+    width: 40%;
+    text-align: left;
+    padding-left: 8rem;
+  }
+  .about_us .about_hero h1 {
+    padding-top: 10rem;
+    font-size: 3.9rem;
+  }
+  .about_us .about_hero h3 {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .about_us .about_hero p {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    padding: 0;
+    width: 80%;
+  }
+}
+
+.container1_about {
+  padding: 5rem 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .container1_about {
+    position: relative;
+  }
+  .container1_about::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    clip-path: polygon(50% 98%, 100% 0, 100% 100%, 0 100%, 0 0);
+    width: 100%;
+    height: 100px;
+    left: 0;
+    top: -99px;
+    z-index: 5;
+  }
+  .container1_about::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    width: 100%;
+    height: 100px;
+    bottom: -99px;
+    right: 0;
+    z-index: 5;
+  }
+}
+.container1_about h1 {
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.container1_about h1::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 4rem;
+  top: 50%;
+  left: -5.5rem;
+}
+.container1_about h1::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 4rem;
+  top: 50%;
+  right: -5.5rem;
+}
+.container1_about .figure figure {
+  width: 80%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 992px) {
+  .container1_about .figure figure {
+    width: 25%;
+  }
+}
+.container1_about .figure figure img {
+  width: 100%;
+  margin: 3rem 0 1rem;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 992px) {
+  .container1_about .figure figure img {
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container1_about .figure {
+    padding: 5rem 0;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container1_about .figure__two {
+    display: flex;
+    flex-direction: column;
+  }
+  .container1_about .figure__two img {
+    order: 1;
+  }
+}
+
+.container2_about {
+  position: relative;
+  background-color: #527dc2;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: black;
+}
+.container2_about .caption {
+  padding: 0.8rem 0;
+}
+.container2_about .caption p {
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 576px) {
+  .container2_about .caption {
+    padding: 1rem 15%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container2_about {
+    display: flex;
+    padding: 14rem 3rem;
+  }
+  .container2_about .caption {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container2_about::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
+}
+
+.container3_about {
+  text-align: center;
+  padding: 5rem 0;
+}
+@media only screen and (min-width: 992px) {
+  .container3_about {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container3_about h1 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .container3_about h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .container3_about h1 {
+    font-size: 2.7rem;
+  }
+}
+.container3_about a {
+  background-color: #ad0d0d;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+}
+@media only screen and (min-width: 992px) {
+  .container3_about a {
+    padding: 1.5rem 4rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+}
+.container3_about a:hover {
+  background-color: #dc1111;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
