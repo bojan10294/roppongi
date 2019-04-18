@@ -1,0 +1,104 @@
+.container2 {
+  cursor: default;
+  background-color: black;
+  @include bp-lg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .caption {
+    color: white;
+    background: black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    @include bp-lg {
+      width: 33.3%;
+    }
+    @include bp-lg {
+      max-width: 500px;
+    }
+    & div {
+      padding: 2rem;
+      @include bp-xl {
+        padding: 2.5rem;
+      }
+    }
+    h1 {
+      font-size: 2rem;
+      transition: all 0.5s ease;
+      @include bp-xl {
+        font-size: 2.3rem;
+      }
+    }
+    p {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      transition: all 0.5s ease;
+      @include bp-xl {
+        font-size: 1rem;
+        margin-top: 1.4rem;
+      }
+    }
+    h4 {
+      margin-top: 0.7rem;
+      transition: all 0.5s ease;
+      @include bp-xl {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .caption1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../img/mag-glass.jpg") center/cover no-repeat;
+    background-size: 122%;
+    transition: all 0.5s ease;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/mag-glass.jpg") center/cover no-repeat;
+      background-size: 130%;
+      padding-bottom: 7px;
+    }
+    &:hover h1,
+    &:hover p,
+    &:hover h4 {
+      text-shadow: 10px 10px 5px black;
+    }
+  }
+  .caption2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../img/interection.jpg") center/cover no-repeat;
+    background-size: 145%;
+    transition: all 0.5s ease;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/interection.jpg") center/cover no-repeat;
+      background-size: 154%;
+      padding-bottom: 7px;
+    }
+    &:hover h1,
+    &:hover p,
+    &:hover h4 {
+      text-shadow: 10px 10px 5px black;
+    }
+  }
+  .caption3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../img/bike.jpg") center/cover no-repeat;
+    background-size: 122%;
+    transition: all 0.5s ease;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../img/bike.jpg") center/cover no-repeat;
+      background-size: 130%;
+      padding-bottom: 7px;
+    }
+    &:hover h1,
+    &:hover p,
+    &:hover h4 {
+      text-shadow: 10px 10px 5px black;
+    }
+  }
+}

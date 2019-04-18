@@ -1,0 +1,97 @@
+.container1 {
+  cursor: default;
+  position: relative;
+  @include bp-lg {
+    background-color: black;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+  }
+  @include bp-xl {
+    padding: 0 10%;
+  }
+  .text_area {
+    text-align: center;
+    background-color: $blue;
+    color: black;
+    padding: 4rem;
+    @include bp-sm {
+      padding: 6rem;
+    }
+    @include bp-lg {
+      background-color: $blue;
+      height: 70%;
+      width: 70%;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .text_div {
+      position: relative;
+      @include bp-lg {
+        width: 50%;
+        margin-right: 7%;
+      }
+      @include bp-xl {
+        margin-right: 11%;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 40%;
+        height: 1px;
+        background-color: black;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        width: 40%;
+        height: 1px;
+        background-color: black;
+      }
+    }
+
+    h1 {
+      margin-bottom: 3rem;
+      @include bp-lg {
+        margin-bottom: 1.5rem;
+      }
+    }
+    p {
+      margin-top: 2rem;
+      @include bp-sm {
+        font-size: 1.2rem;
+      }
+      @include bp-lg {
+        margin-top: 1rem;
+      }
+    }
+  }
+  .img_area {
+    @include bp-lg {
+      width: 50%;
+      height: 50%;
+      background-color: black;
+      background: url("../img/img-2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      left: 30%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      filter: brightness(70%);
+    }
+    @include bp-xl {
+      width: 40%;
+    }
+  }
+}

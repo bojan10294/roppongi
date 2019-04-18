@@ -1,0 +1,84 @@
+.container1_about {
+  padding: 5rem 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  @include bp-lg {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: black;
+      clip-path: polygon(50% 98%, 100% 0, 100% 100%, 0 100%, 0 0);
+      width: 100%;
+      height: 100px;
+      left: 0;
+      top: -99px;
+      z-index: 5;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      clip-path: polygon(50% 100%, 0 0, 100% 0);
+      width: 100%;
+      height: 100px;
+      bottom: -99px;
+      right: 0;
+      z-index: 5;
+    }
+  }
+  h1 {
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: white;
+      height: 2px;
+      width: 4rem;
+      top: 50%;
+      left: -5.5rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: white;
+      height: 2px;
+      width: 4rem;
+      top: 50%;
+      right: -5.5rem;
+    }
+  }
+  .figure {
+    figure {
+      width: 80%;
+      margin: 0 auto;
+      @include bp-lg {
+        width: 25%;
+      }
+      img {
+        width: 100%;
+        margin: 3rem 0 1rem;
+        border-radius: 10px;
+        @include bp-lg {
+          margin: 1rem;
+        }
+      }
+    }
+    @include bp-lg {
+      padding: 5rem 0;
+      display: flex;
+    }
+    &__two {
+      @include bp-lg {
+        display: flex;
+        flex-direction: column;
+        img {
+          order: 1;
+        }
+      }
+    }
+  }
+}

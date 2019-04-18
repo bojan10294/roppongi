@@ -1,0 +1,32 @@
+footer {
+  cursor: default;
+  text-align: center;
+  background-color: $blue;
+  padding: 3rem 0;
+  .line {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $grey;
+    margin-bottom: 3rem;
+  }
+  ul {
+    @include bp-md {
+      display: flex;
+      justify-content: center;
+    }
+    margin-bottom: 3rem;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: $grey_dark;
+        margin: 0 1rem;
+      }
+    }
+  }
+  p {
+    color: $grey_dark;
+  }
+}
