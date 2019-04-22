@@ -1,11 +1,24 @@
 .about_us {
-  background: url("../img/about-bg.jpg");
-  height: calc(100vh - 80px);
-  background-position: center;
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  height: 32rem;
+  @include bp-md {
+    height: 40rem;
+    background: url("../img/about-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    align-items: flex-start;
+  }
+  @include bp-xl {
+    height: 100vh;
+    background-position: center;
+  }
+
   .about_hero {
     text-align: center;
     h1 {
-      padding-top: 2.5rem;
       text-transform: uppercase;
     }
     h3 {
@@ -38,7 +51,7 @@
         height: 1px;
         width: 30%;
         margin: 0 auto;
-        @include bp-xxl {
+        @include bp-xl {
           width: 40%;
           margin: 1rem 0;
         }
@@ -57,12 +70,12 @@
         padding: 0 20%;
       }
     }
-    @include bp-xxl {
+    @include bp-xl {
       width: 40%;
       text-align: left;
 
       h1 {
-        padding-top: 10rem;
+        padding-top: 5rem;
         font-size: 3.9rem;
       }
       h3 {
@@ -71,11 +84,16 @@
       }
       p {
         margin-top: 3rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 0;
         width: 80%;
       }
       padding-left: 8rem;
+      @include bp-xxl {
+        h1 {
+          padding-top: 8rem;
+        }
+      }
     }
   }
 }

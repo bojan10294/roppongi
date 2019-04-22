@@ -2,20 +2,20 @@ footer {
   cursor: default;
   text-align: center;
   background-color: $blue;
-  padding: 3rem 0;
+  padding: 3rem 0 1rem;
   .line {
     content: "";
     height: 1px;
     width: 100%;
     background-color: $grey;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   ul {
     @include bp-md {
       display: flex;
       justify-content: center;
     }
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     li {
       margin-bottom: 0.5rem;
       a {
@@ -28,5 +28,6 @@ footer {
   }
   p {
     color: $grey_dark;
+    font-size: 0.9rem;
   }
 }
