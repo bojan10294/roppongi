@@ -17,16 +17,19 @@
       margin-top: 0.3rem;
     }
     @include bp-lg {
-      color: $blue_dark;
+      color: lighten($grey, 35%);
     }
     @include bp-xl {
       margin-left: 8rem;
     }
     &:hover {
-      color: $blue;
+      color: white;
     }
-    &__about {
-      color: black;
+    &__black {
+      color: darken($grey, 10%);
+      &:hover {
+        color: black;
+      }
     }
   }
   &__header {
@@ -99,7 +102,7 @@
 
   .active_link {
     color: white;
-    &__about {
+    &__black {
       color: black;
     }
   }
@@ -118,7 +121,7 @@
 }
 .bar {
   background-color: white;
-  &__about {
+  &__black {
     background-color: black;
   }
 }
@@ -141,7 +144,7 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.about_single-link {
+.black_single-link {
   @include bp-lg {
     color: $grey;
     &:hover {

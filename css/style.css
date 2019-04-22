@@ -47,7 +47,7 @@ li {
 }
 @media only screen and (min-width: 992px) {
   .nav_bar__logo {
-    color: #37588d;
+    color: #adadad;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -56,9 +56,12 @@ li {
   }
 }
 .nav_bar__logo:hover {
-  color: #527dc2;
+  color: white;
 }
-.nav_bar__logo__about {
+.nav_bar__logo__black {
+  color: #3b3b3b;
+}
+.nav_bar__logo__black:hover {
   color: black;
 }
 .nav_bar__header {
@@ -140,7 +143,7 @@ li {
 .nav_bar .active_link {
   color: white;
 }
-.nav_bar .active_link__about {
+.nav_bar .active_link__black {
   color: black;
 }
 @media only screen and (min-width: 1200px) {
@@ -159,7 +162,7 @@ li {
 .bar {
   background-color: white;
 }
-.bar__about {
+.bar__black {
   background-color: black;
 }
 
@@ -185,10 +188,10 @@ li {
 }
 
 @media only screen and (min-width: 992px) {
-  .about_single-link {
+  .black_single-link {
     color: #545454;
   }
-  .about_single-link:hover {
+  .black_single-link:hover {
     color: black;
   }
 }
@@ -734,8 +737,8 @@ footer p {
 }
 @media only screen and (min-width: 1200px) {
   .about_us {
-    height: calc(100vh - 200px);
-    background-position-y: -10rem;
+    height: 100vh;
+    background-position: center;
   }
 }
 .about_us .about_hero {
@@ -803,15 +806,15 @@ footer p {
   }
   .about_us .about_hero h1 {
     padding-top: 5rem;
-    font-size: 3.9rem;
+    font-size: 3.7rem;
   }
   .about_us .about_hero h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     padding: 0;
   }
   .about_us .about_hero p {
     margin-top: 3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0;
     width: 80%;
   }
@@ -879,7 +882,8 @@ footer p {
   right: -5.5rem;
 }
 .container1_about .figure figure {
-  width: 80%;
+  text-align: center;
+  width: 90%;
   margin: 0 auto;
 }
 @media only screen and (min-width: 992px) {
@@ -888,7 +892,7 @@ footer p {
   }
 }
 .container1_about .figure figure img {
-  width: 100%;
+  width: 90%;
   margin: 3rem 0 1rem;
   border-radius: 10px;
 }
@@ -896,6 +900,9 @@ footer p {
   .container1_about .figure figure img {
     margin: 1rem;
   }
+}
+.container1_about .figure figure figcaption {
+  padding: 0 1rem;
 }
 @media only screen and (min-width: 992px) {
   .container1_about .figure {
@@ -999,6 +1006,99 @@ footer p {
 .container3_about a:hover {
   background-color: #dc1111;
   color: black;
+}
+
+.contact_hero {
+  height: 10rem;
+  background-color: #527dc2;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .contact_hero {
+    height: 14rem;
+  }
+}
+.contact_hero div {
+  position: relative;
+  top: 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact_hero div {
+    top: 4rem;
+  }
+}
+.contact_hero h1 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact_hero h1 {
+    font-size: 2.5rem;
+  }
+}
+.contact_hero p {
+  font-size: 0.65rem;
+}
+@media only screen and (min-width: 992px) {
+  .contact_hero p {
+    font-size: 1rem;
+  }
+}
+
+.container_contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+@media only screen and (min-width: 992px) {
+  .container_contact {
+    flex-direction: row;
+  }
+}
+.container_contact .left {
+  flex: 1;
+  padding: 1.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .container_contact .left p {
+    margin-bottom: 2.5rem;
+  }
+  .container_contact .left h4 {
+    margin-bottom: 1rem;
+  }
+}
+.container_contact .right {
+  flex: 1;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .container_contact .right {
+    margin-top: 0;
+  }
+}
+.container_contact .right img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.container_contact .right h5 {
+  font-size: 1.2rem;
+}
+.container_contact .right .media:first-child {
+  padding: 2rem 2rem 1rem;
+}
+.container_contact .right .media:last-child {
+  padding: 0 2rem 2rem;
+}
+.container_contact .right h6 {
+  margin-bottom: 1rem;
+}
+.container_contact .right a {
+  font-size: 2.5rem;
+  margin: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

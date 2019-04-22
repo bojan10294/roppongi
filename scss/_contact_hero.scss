@@ -1,0 +1,80 @@
+.contact_hero {
+  height: 10rem;
+  background-color: $blue;
+  color: white;
+  width: 100%;
+  text-align: center;
+  @include bp-lg {
+    height: 14rem;
+  }
+  div {
+    position: relative;
+    top: 2rem;
+    @include bp-lg {
+      top: 4rem;
+    }
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    @include bp-lg {
+      font-size: 2.5rem;
+    }
+  }
+  p {
+    font-size: 0.65rem;
+    @include bp-lg {
+      font-size: 1rem;
+    }
+  }
+}
+.container_contact {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  @include bp-lg {
+    flex-direction: row;
+  }
+  .left {
+    flex: 1;
+    padding: 1.5rem;
+    @include bp-lg {
+      p {
+        margin-bottom: 2.5rem;
+      }
+      h4 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+
+    padding: 1.5rem;
+    margin-top: 3rem;
+    @include bp-lg {
+      margin-top: 0;
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+    h5 {
+      font-size: 1.2rem;
+    }
+    .media:first-child {
+      padding: 2rem 2rem 1rem;
+    }
+    .media:last-child {
+      padding: 0 2rem 2rem;
+    }
+    h6 {
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: 2.5rem;
+      margin: 1.2rem;
+    }
+  }
+}

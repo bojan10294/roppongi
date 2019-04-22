@@ -53,18 +53,22 @@
   }
   .figure {
     figure {
-      width: 80%;
+      text-align: center;
+      width: 90%;
       margin: 0 auto;
       @include bp-lg {
         width: 25%;
       }
       img {
-        width: 100%;
+        width: 90%;
         margin: 3rem 0 1rem;
         border-radius: 10px;
         @include bp-lg {
           margin: 1rem;
         }
+      }
+      figcaption {
+        padding: 0 1rem;
       }
     }
     @include bp-lg {
